@@ -14,7 +14,7 @@ class States  {
             WaitForApplicationIdle();
             return true;
         } else {
-            console.log(`Application has not started and is not ready for user input.`);
+            console.log(`Application has not started and is not ready for user input..`);
             return false;
         }
 
