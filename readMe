@@ -1,0 +1,22 @@
+The idea of the project is that we export four interfaces IButton, IElement, IExecutionTool, IField. TypeScript and JavaScript were used, and this is the structure:
+
+BaseCompontent:
+interface -  IButton, IElement, IExecutionTool, IField
+Button -  The Button class then implements the IButton, IField, and IElement interfaces
+EHSFramework -  EHSFramework class implements the IExecutionTool
+
+data - is used for data entry
+
+page objects:
+EHSAllItems - contains elements and actions for EHS All Items screen
+EHSHome - contains elements and actions for EHS Home screen
+EHSItem - contains elements and actions for EHS Item screen
+
+states/appStates - contains startEHSApplication and exitEHSApplication methods
+
+tasks/uiTasks - use all high level methods called in spec
+
+test-suites/testSpec - contain spec we "run"
+
+
+
