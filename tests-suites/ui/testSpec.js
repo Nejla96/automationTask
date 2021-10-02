@@ -8,9 +8,9 @@ const uiTasks = new UITasks(),
 
 describe('Automation Task', function () {
     let ehsApplication = clone(data, {
-            invalidProductId: "STDD9",
-            productId: "STD 2"
-        }
+        invalidProductId: "STDD9",
+        productId: "STD 2"
+    }
     );
 
     it('Story 1: As an administrator of the EHS system I want to be able to see all the available products so that I can make faster decisions.', function () {
@@ -37,7 +37,7 @@ describe('Automation Task', function () {
         // Open specif item, check visibility
         uiTasks.openSpecificItem(item1);
 
-        //Check readability of elements
+        //Check the values entered in the fields
         uiTasks.checkingValuesFromTheFields(data.ehsItem);
 
         //Terminates app
@@ -53,6 +53,7 @@ describe('Automation Task', function () {
         //Enter product id and check information about that product
         uiTasks.enterProductId(ehsApplication.productId);
 
+        //Check the values entered in the fields
         uiTasks.checkingValuesFromTheFields(data.ehsItem2);
 
         //Terminates app
@@ -65,7 +66,7 @@ describe('Automation Task', function () {
         //Start app
         appStates.startEHSApplication();
 
-        //Enter product id and check information about that product
+        //Enter invalid product id 
         uiTasks.enterProductId(ehsApplication.invalidProductId);
 
         //Terminates app

@@ -37,7 +37,6 @@ class EHSHome extends EHSFramework {
         if (this.productIdInputField.Exists(100)) {
             this.productIdInputField.Click();
             this.productIdInputField.Write(productId);
-            console.log("Product id is ${productId}..");
             this.clickOnFind();
             return true;
         } else {
