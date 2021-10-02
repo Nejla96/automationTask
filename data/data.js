@@ -72,10 +72,6 @@ const Data = [
             retailPrice: "$3.50"
 
         },
-        invalidInput: {
-            productId: "STD 9",
-
-        }
     }
 ]
 
